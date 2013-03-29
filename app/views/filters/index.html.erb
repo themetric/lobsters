@@ -15,12 +15,17 @@
       <th width="15%">Tag</th>
       <th width="78%">Description</th>
     </tr>
+    <tr>
+      <td></td>
+      <td><%= text_field_tag "search_tag", "", :placeholder => "search" %></td>
+      <td></td>
+    </tr>      
     <% Tag.order(:tag).accessible_to(@user).each do |tag| %>
       <tr>
         <td><input type="checkbox" name="tag_<%= tag.tag %>" value=1
           <%= @filtered_tags.map{|ft| ft.tag_id }.include?(tag.id) ?
           "checked" : "" %>></td>
-        <td><a href="/t/<%= tag.tag %>" class="tag tag_<%= tag.tag %>"><%=
+        <td id="tag"><a href="/t/<%= tag.tag %>" class="tag tag_<%= tag.tag %>"><%=
           tag.tag %></a></td>
         <td><%= tag.description %>
           <% if tag.filtered_by_default? %>
