@@ -13,6 +13,8 @@ gem "jquery-rails"
 gem "bcrypt-ruby", "3.0.0"
 
 gem "dynamic_form"
+gem "execjs"
+gem "therubyracer"
 
 # use old version that doesn't have tinder bullshit
 gem "exception_notification", "2.6.1"

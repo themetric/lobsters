@@ -464,6 +464,14 @@ li .link a {
 	text-decoration: none;
 }
 
+.link.external {
+    padding-right: 15px;
+    background-image: url('/assets/icon-external-link.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    margin-right: 5px;
+}
+
 li.story a.tag {
 	vertical-align: middle;
 }
