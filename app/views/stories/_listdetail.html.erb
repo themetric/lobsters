@@ -35,6 +35,9 @@ class="story <%= story.vote == 1 ? "upvoted" : (story.vote == -1 ?
       </span>
       <span class="domain"><%= story.domain %></span>
     <% end %>
+    <div class="preview">
+        <%= truncate((strip_tags story.markeddown_description).html_safe, :length => 200, :omission => "...(continued)") %>
+    </div>
     <div class="byline">
       <% if story.previewing %>
         by <a><%= story.user.username %></a>

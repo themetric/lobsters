@@ -33,7 +33,7 @@
       <div id="headerleft">
         <a id="l_holder" style="background-color: #<%= sprintf("%02x%02x%02x",
         [ 255, (@traffic * 7).floor + 50.0 ].min, 0, 0) %>;" href="/"
-        title="Lobsters (<%= @traffic.to_i %>)"></a>
+        title="News | MarklinStop.com (<%= @traffic.to_i %>)"></a>
 
         <% links = {
           "/" => "Home",
@@ -104,5 +104,9 @@
       <%= yield %>
     </div>
   </div>
+  <div id="footer">
+    <%= link_to "a website from", "http://marklinstop.com", :id => "marklinstop", :target => "_blank" %>
+    open source at <%= link_to "lobsters", "https://github.com/themetric/lobsters", :target => "_blank" %>
+  </div> 
 </body>
 </html>

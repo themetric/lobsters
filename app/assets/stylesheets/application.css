@@ -219,7 +219,6 @@ div#inside {
 	margin-right: 0.25em;
 }
 
-
 /* header */
 
 #header {
@@ -299,9 +298,21 @@ div#footer {
 	font-style: italic;
 	margin-bottom: 2em;
 	padding-top: 1em;
+	margin: 0px auto; 
+	width: 1000px; 
+	text-align: right; 
+	border-top: 1px solid #E7E7E7; 
 }
-div#footer a {
-	color: gray;
+
+div#footer a#marklinstop {
+    margin-bottom: 10px; 
+    display: block; 
+    padding: 10px 60px 10px 0px;     
+    background: url('/assets/marklinstop_logo.png'); 
+    background-repeat: no-repeat; 
+    background-position: 100% 50%;   
+    text-decoration: none; 
+    color: #777;
 }
 
 
@@ -494,6 +505,13 @@ li .byline {
 li.story .byline {
 	margin-top: 1px;
 }
+
+li.story .preview {
+    max-width: 500px; 
+    margin: 5px 0px; 
+    color: #777; 
+}
+
 li .byline a {
 	color: #888;
 	text-decoration: none;

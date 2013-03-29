@@ -64,6 +64,6 @@ silence_warnings do
   ActionDispatch::ParamsParser::DEFAULT_PARSERS = {}
 end
 
-Rails.application.routes.default_url_options[:host] = "lobste.rs"
+Rails.application.routes.default_url_options[:host] = "news.marklinstop.com"
 
 require "#{Rails.root}/lib/monkey"
